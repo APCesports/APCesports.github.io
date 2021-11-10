@@ -1,8 +1,8 @@
 :root {
   --color:  rgb(87, 255, 20);
   /*--color: rgb(176,189,243);*/
-  /*--background1: rgb(29,30,30);*/
-  --background1: url("https://cdn.discordapp.com/attachments/905300934966513664/907806596841750568/vnzBanner.png") center / cover no-repeat;*/
+  --background1: rgb(29,30,30);
+  /*--background1: url("https://cdn.discordapp.com/attachments/905300934966513664/907806596841750568/vnzBanner.png") center / cover no-repeat;*/
 }
 
 body {
