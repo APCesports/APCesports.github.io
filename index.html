@@ -142,8 +142,10 @@
   <source src="music/sound.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
-<button class="music" onclick="playAudio()" type="button">Play Audio</button>
-<button class="music" onclick="pauseAudio()" type="button">Pause Audio</button> 
+<div class="row row-cols-3 justify-content-center">
+   <a onclick="playAudio()" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"><b style="color:black">Play Music</b></a>
+    <a onclick="pauseAudio()" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"><b style="color:black">Pause Music</b></a>
+</div>
   <h2>STAFF</h2>
   <div class="accordion">
     <! --- If you want more just copy the following code from here -- >
