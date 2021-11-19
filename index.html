@@ -143,8 +143,10 @@
   Your browser does not support the audio element.
 </audio>
 <div class="row row-cols-3 justify-content-center">
-   <a onclick="playAudio()" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"><b style="color:black">Play Music</b></a>
-    <a onclick="pauseAudio()" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"><b style="color:black">Pause Music</b></a>
+   <a onclick="playAudio(), toast()" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"><b style="color:black">Play Music</b></a>
+   <div id="play">Playing</div>
+    <a onclick="pauseAudio(), toast2()" onclick="toast2()" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"><b style="color:black">Pause Music</b></a>
+    <div id="pause">Paused</div>
 </div>
   <h2>STAFF</h2>
   <div class="accordion">
@@ -284,6 +286,18 @@ function playAudio() {
 function pauseAudio() { 
   x.pause(); 
 } 
+
+function toast() {
+  var x = document.getElementById("play");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function toast2() {
+  var x = document.getElementById("pause");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
     </script>
 </body>
 
