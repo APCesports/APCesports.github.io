@@ -73,6 +73,30 @@ div#slider figure {
             }
 }  
 
+/* music button */
+
+.music {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #fedd00;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-right: 15px;
+}
+
+.music:hover {background-color: #1d1d1e}
+
+.music:active {
+  background-color: #fedd00;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 /* scroll bar */
 
 ::-webkit-scrollbar {

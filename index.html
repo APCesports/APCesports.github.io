@@ -138,6 +138,12 @@
 </section>
         </section><div class="container">
 <hr id="staff">
+<audio id="myAudio">
+  <source src="music/sound.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<button class="music" onclick="playAudio()" type="button">Play Audio</button>
+<button class="music" onclick="pauseAudio()" type="button">Pause Audio</button> 
   <h2>STAFF</h2>
   <div class="accordion">
     <! --- If you want more just copy the following code from here -- >
@@ -266,29 +272,17 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Counting.js"></script>
     <script src="assets/js/untitled.js"></script>
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+    <script>
+    var x = document.getElementById("myAudio"); 
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyBXhepNvgV0lxKy3qxJrZEHpq-iBxpmDFc",
-    authDomain: "apc-esports.firebaseapp.com",
-    projectId: "apc-esports",
-    storageBucket: "apc-esports.appspot.com",
-    messagingSenderId: "4554237157",
-    appId: "1:4554237157:web:8c1bb1b6ca72725c40a00c",
-    measurementId: "G-E8D9Q4D1S5"
-  };
+function playAudio() { 
+  x.play(); 
+} 
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+function pauseAudio() { 
+  x.pause(); 
+} 
+    </script>
 </body>
 
 </html>
