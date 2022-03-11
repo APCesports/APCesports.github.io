@@ -27,8 +27,17 @@
         <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">GOOODBYE!</h1>
     <article>  
     <div>
-        <p style="color: var(--secondary-text-color);">APC ESPORTS site has been deleted, Thank you for supporting. Now signing off.</p>
+        <p style="color: var(--secondary-text-color);">APC ESPORTS site has been deleted</p>
         <p style="color: var(--secondary-text-color);">&mdash; APC ESPORTS</p>
+    </div>
+    <div>
+        <h3 style="color: white;">Check Members:</h3>
+        <input type="text" id="myInput" placeholder="UID" />
+
+<button>CHECK</button>
+
+<p style="color: yellow;" id="uid">
+</p>
     </div>
     </article> 
     </header>
@@ -79,5 +88,103 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "Please wait, Server reloading...";
   }
 }, 1000);
+
+$(document).ready(function(){
+    
+    $('button').on('click', function(){
+        var myValue = $('#myInput').val();
+        if(myValue != ''){
+            if (myValue.indexOf('6851357804293259265') >= 0) 
+            {
+               document.getElementById("uid").textContent = myValue + " Clan Master";
+            }
+
+            if (myValue.indexOf('6851888499763707905') >= 0) 
+            {
+               document.getElementById("uid").textContent = myValue + " Vice Master";
+            } 
+
+            if (myValue.indexOf('6920252973780041729') >= 0) 
+            {
+               document.getElementById("uid").textContent = myValue + " Vice Master";
+            } 
+
+            if (myValue.indexOf('6978633941473296385') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            } 
+
+            if (myValue.indexOf('7022846176407846913') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            } 
+
+             if (myValue.indexOf('7016475757048233986') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            } 
+
+            if (myValue.indexOf('7027674780790685697') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            } 
+
+            if (myValue.indexOf('6843013172144635905') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            } 
+
+            if (myValue.indexOf('7005162550794911745') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            } 
+
+            if (myValue.indexOf('6868826418004885505') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            } 
+
+            if (myValue.indexOf('6835514793776906241') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            } 
+
+            if (myValue.indexOf('6875262632908029953') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            }
+
+            if (myValue.indexOf('6761370456088903681') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            }
+
+            if (myValue.indexOf('6991423432223096833') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            }
+
+            if (myValue.indexOf('6947849386177069057') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            }
+
+            if (myValue.indexOf('6978343455890079745') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            }
+
+            if (myValue.indexOf('6843929421997408257') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            }
+
+            else {
+                document.getElementById("uid").textContent = myValue + " Couldn't found";
+              }
+            }
+    });
+    
+});
 </script>
 </html>
