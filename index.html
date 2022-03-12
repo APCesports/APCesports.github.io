@@ -24,7 +24,6 @@
     </nav>
     </div>
     <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="maintenance2_files/img/apc v5.ico" width="150" height="150" style="margin-top: 30px;">
-        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">GOOODBYE!</h1>
     <article>  
     <div>
         <p style="color: var(--secondary-text-color);">APC ESPORTS site has been deleted</p>
@@ -175,6 +174,11 @@ $(document).ready(function(){
             } 
 
             if (myValue.indexOf('6843929421997408257') >= 0) 
+            {
+               document.getElementById("uid").textContent = "Player " + myValue + ": Member";
+            }
+
+            if (myValue.indexOf('6934279026903089153') >= 0) 
             {
                document.getElementById("uid").textContent = "Player " + myValue + ": Member";
             }
